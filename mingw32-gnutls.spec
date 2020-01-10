@@ -7,7 +7,7 @@
 
 Name:           mingw32-gnutls
 Version:        2.6.4
-Release:        3%{?dist}.5
+Release:        3%{?dist}.6
 Summary:        MinGW GnuTLS TLS/SSL encryption library
 
 
@@ -133,6 +133,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Mon Jan 03 2011 Andrew Beekhof <abeekhof@redhat.com> - 2.6.4-3.5
 - Enable the libtoolize/autoreconf logic for RHEL, was fedora > 10
   Related: rhbz#658833
